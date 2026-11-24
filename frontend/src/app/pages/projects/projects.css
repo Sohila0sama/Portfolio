@@ -43,7 +43,7 @@
 
 .project-card:hover {
   transform: translateY(-6px);
-  border-color: rgba(0,224,164,.4);
+  border-color: rgba(255, 92, 122,.4);
 }
 
 .project-card img {
@@ -60,7 +60,7 @@
   display: inline-block;
   padding: 5px 12px;
   border-radius: 15px;
-  background: rgba(0,224,164,.12);
+  background: rgba(255, 92, 122,.12);
   color: var(--primary);
   font-size: 12px;
   margin-right: 6px;

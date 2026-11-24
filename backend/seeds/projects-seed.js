@@ -18,30 +18,67 @@ async function seedProjects() {
 
     const Projects = mongoose.model("Project", ProjectSchema);
 
+    const WIKI = "https://en.wikipedia.org/wiki/Magdi_Yacoub";
+    const BHF =
+      "https://www.bhf.org.uk/what-we-do/news-from-the-bhf/news-archive/2026/april/prof-sir-magdi-yacoub-honoured-with-red-plaque";
+    const FOUNDATION = "https://myglobalheart.org";
+
+    // Each "project" is a career milestone.
+    // liveDemo -> "Read More" button, sourceCode -> "Source" button.
     const projectsData = [
       {
-        title: "FreshCart E-Commerce",
-        image: "uploads/freshcart.jpg",
-        description: "An E-Commerce application built using Angular and .NET.",
-        tech: ["Angular", "TypeScript", "C#", ".NET", "SQL Server"],
-        liveDemo: "https://example.com",
-        sourceCode: "https://github.com/sayedmohameddev"
+        title: "Harefield Heart Transplant Programme",
+        image: "uploads/milestone-1.svg",
+        description:
+          "Began the heart transplant programme at Harefield Hospital in 1980. The British Heart Foundation describes it as the world's largest heart and lung transplantation programme, with over 2,500 transplant operations.",
+        tech: ["Harefield Hospital", "Transplantation", "1980"],
+        liveDemo: BHF,
+        sourceCode: WIKI
       },
       {
-        title: "AI Chat Application",
-        image: "uploads/ai-chat.jpg",
-        description: "An AI chat application with a responsive user interface.",
-        tech: ["Angular", "TypeScript", "SASS", "HTML"],
-        liveDemo: "https://ai-chat112.netlify.app",
-        sourceCode: "https://github.com/sayedmohameddev"
+        title: "Arterial Switch Operation",
+        image: "uploads/milestone-2.svg",
+        description:
+          "Pioneered the arterial switch operation for babies born with transposition of the great arteries, devising a two-stage approach in 1977.",
+        tech: ["Congenital Heart Surgery", "Paediatric", "1977"],
+        liveDemo: BHF,
+        sourceCode: WIKI
       },
       {
-        title: "Mealify Restaurant",
-        image: "uploads/mealify.jpg",
-        description: "A responsive restaurant website with dark mode.",
-        tech: ["HTML", "CSS", "JavaScript", "Bootstrap"],
-        liveDemo: "https://example.com",
-        sourceCode: "https://github.com/sayedmohameddev"
+        title: "Ross-Yacoub Remodelling",
+        image: "uploads/milestone-3.svg",
+        description:
+          "Worked with Donald Ross on heart valve repair and adapted the Ross procedure, including the Ross-Yacoub remodelling, mainly for younger patients.",
+        tech: ["Heart Valves", "Cardiac Surgery", "Donald Ross"],
+        liveDemo: WIKI,
+        sourceCode: WIKI
+      },
+      {
+        title: "First UK Heart and Lung Transplant",
+        image: "uploads/milestone-4.svg",
+        description:
+          "Performed the UK's first combined heart and lung transplant at Harefield Hospital in 1983.",
+        tech: ["Heart-Lung Transplant", "Harefield Hospital", "1983"],
+        liveDemo: WIKI,
+        sourceCode: WIKI
+      },
+      {
+        title: "Aswan Heart Centre",
+        image: "uploads/milestone-5.svg",
+        description:
+          "Founded the Aswan Heart Centre in southern Egypt in 2009, offering free, high-quality heart care with a strong focus on children, and training healthcare professionals.",
+        tech: ["Aswan, Egypt", "Free Care", "Training"],
+        liveDemo: FOUNDATION,
+        sourceCode: WIKI
+      },
+      {
+        title: "Living Heart Valve Research",
+        image: "uploads/milestone-6.svg",
+        description:
+          "Leads research at the Magdi Yacoub Institute on biological heart valves designed to grow with children, building on his 2007 report of growing part of a human valve from stem cells.",
+        tech: ["Tissue Engineering", "Research", "Heart Valves"],
+        liveDemo: BHF,
+        sourceCode: WIKI
       }
     ];
 

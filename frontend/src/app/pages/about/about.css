@@ -64,7 +64,7 @@
 
 .stat-card:hover {
   transform: translateY(-6px);
-  border-color: rgba(0,224,164,.4);
+  border-color: rgba(255, 92, 122,.4);
 }
 
 .stat-card h4 {

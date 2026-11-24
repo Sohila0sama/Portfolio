@@ -6,7 +6,7 @@ mongoose.connect("mongodb://localhost:27017/portfolio")
   .then(() => console.log("Database Connected"))
   .catch((err) => console.log("Database Error:", err));
 
-// Skill Schema
+// Skill Schema (used on the "Expertise" page)
 const SkillSchema = new mongoose.Schema({
   category: String,
   items: [String]
@@ -17,45 +17,40 @@ const Skill = mongoose.model("Skill", SkillSchema);
 // Seed Data
 const skillsData = [
   {
-    category: "Frontend",
+    category: "Surgery",
     items: [
-      "HTML",
-      "CSS",
-      "JavaScript",
-      "TypeScript",
-      "Angular",
-      "React",
-      "Bootstrap",
-      "Tailwind CSS",
-      "SASS"
+      "Cardiothoracic Surgery",
+      "Heart Transplantation",
+      "Heart and Lung Transplantation",
+      "Congenital Heart Surgery",
+      "Heart Valve Surgery"
     ]
   },
   {
-    category: "Backend",
+    category: "Research",
     items: [
-      "Node.js",
-      "Express.js",
-      "C#",
-      "ASP.NET Core",
-      "REST API"
+      "Biological Heart Valves",
+      "Tissue Engineering",
+      "Heart Muscle Repair",
+      "Heart Support Devices"
     ]
   },
   {
-    category: "Database",
+    category: "Humanitarian Work",
     items: [
-      "MongoDB",
-      "SQL Server",
-      "Mongoose",
-      "Entity Framework Core"
+      "Chain of Hope (1996)",
+      "Aswan Heart Centre (2009)",
+      "Magdi Yacoub Global Heart Foundation",
+      "Training Healthcare Professionals"
     ]
   },
   {
-    category: "Tools",
+    category: "Honours",
     items: [
-      "Git",
-      "GitHub",
-      "Postman",
-      "VS Code"
+      "Knighthood (1992)",
+      "Fellow of the Royal Society (1999)",
+      "Order of the Nile (2011)",
+      "Order of Merit (2014)"
     ]
   }
 ];

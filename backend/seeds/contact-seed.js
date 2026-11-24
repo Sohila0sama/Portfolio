@@ -16,12 +16,18 @@ const ContactSchema = new mongoose.Schema({
 
 const Contacts = mongoose.model("Contact", ContactSchema);
 
+// Only public, organisation-level contact details are used here.
+// Field names are kept so the existing app keeps working:
+//   linkedin -> "Wikipedia" link
+//   github   -> "Foundation" link
+//   whatsapp -> "BHF" link
 const contactData = {
-  email: "sayedmohameddev@gmail.com",
-  location: "Cairo, Egypt",
-  github: "https://github.com/sayedmohameddev",
-  linkedin: "https://linkedin.com/in/sayed-mohamed-81b66b290/",
-  whatsapp: "01150778216"
+  email: "info@myglobalheart.org",
+  location: "Aswan & Cairo, Egypt",
+  github: "https://myglobalheart.org",
+  linkedin: "https://en.wikipedia.org/wiki/Magdi_Yacoub",
+  whatsapp:
+    "https://www.bhf.org.uk/what-we-do/news-from-the-bhf/news-archive/2026/april/prof-sir-magdi-yacoub-honoured-with-red-plaque"
 };
 
 async function seedContact() {

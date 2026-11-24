@@ -1,6 +1,6 @@
 /* العزل التام للمكون باستخدام :host */
 :host {
-  --primary: #00e0a4;
+  --primary: #ff5c7a;
   --bg-card: #121a2f;
   --text-main: #ffffff;
   --text-muted: #9aa4bf;
@@ -46,7 +46,7 @@ input, textarea {
 input:focus, textarea:focus {
   outline: none;
   border-color: var(--primary);
-  background: rgba(0, 224, 164, 0.02); /* لمسة خفيفة عند التركيز */
+  background: rgba(255, 92, 122, 0.02); /* لمسة خفيفة عند التركيز */
 }
 
 .actions {
@@ -70,7 +70,7 @@ input:focus, textarea:focus {
 }
 
 .btn.primary:hover {
-  box-shadow: 0 4px 15px rgba(0, 224, 164, 0.3);
+  box-shadow: 0 4px 15px rgba(255, 92, 122, 0.3);
 }
 
 .btn.ghost {
@@ -163,7 +163,7 @@ input:focus, textarea:focus {
 }
 
 .btn-edit {
-  background: rgba(0,224,164,0.1);
+  background: rgba(255, 92, 122,0.1);
   color: var(--primary);
 }
 
@@ -180,7 +180,7 @@ input:focus, textarea:focus {
 }
 
 .tag {
-  background: rgba(0,224,164,0.1);
+  background: rgba(255, 92, 122,0.1);
   color: var(--primary);
   padding: 6px 12px;
   border-radius: 20px;

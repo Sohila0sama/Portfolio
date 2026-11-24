@@ -1,0 +1,8 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 800 400" width="800" height="400" role="img" aria-label="Abstract heartbeat line">
+  <rect width="800" height="400" fill="#121a2f"/>
+  <rect width="800" height="400" fill="#ff5c7a" opacity="0.06"/>
+  <g stroke="#ffffff" stroke-opacity="0.05">
+    <path d="M0 100H800M0 200H800M0 300H800M100 0V400M200 0V400M300 0V400M400 0V400M500 0V400M600 0V400M700 0V400"/>
+  </g>
+  <polyline points="-74,220 -34,220 -19,200 -4,220 16,220 26,250 41,110 56,290 71,220 116,220 141,185 166,220 166,220 206,220 221,200 236,220 256,220 266,250 281,110 296,290 311,220 356,220 381,185 406,220 406,220 446,220 461,200 476,220 496,220 506,250 521,110 536,290 551,220 596,220 621,185 646,220 646,220 686,220 701,200 716,220 736,220 746,250 761,110 776,290 791,220 836,220 861,185 886,220" fill="none" stroke="#ff5c7a" stroke-width="5" stroke-linejoin="round" stroke-linecap="round"/>
+</svg>

@@ -17,13 +17,19 @@ const AboutSchema = new mongoose.Schema({
 
 const About = mongoose.model("About", AboutSchema);
 
+// The four stat cards on the About page show (see about.html):
+//   experience   -> year he graduated from Cairo University
+//   projects     -> number of transplant operations (shown with a "+")
+//   problem      -> year he was knighted
+//   technologies -> year the Aswan Heart Centre was founded
 const aboutData = {
-  title: "About Me",
-  description: "I'm a Full Stack Developer passionate about building modern and responsive web applications.",
-  experience: "2+ Years",
-  projects: "10+ Projects",
-  problem: "I enjoy solving problems and building efficient software solutions.",
-  technologies: "Angular, JavaScript, TypeScript, Node.js, Express.js, MongoDB"
+  title: "About Sir Magdi",
+  description:
+    "Born in Bilbeis, Egypt in 1935, Magdi Yacoub graduated from Cairo University School of Medicine and went on to a career in the UK. He began the heart transplant programme at Harefield Hospital in 1980, served as British Heart Foundation Professor of Cardiothoracic Surgery at Imperial College London, and founded the charity Chain of Hope in 1996 and the Aswan Heart Centre in 2009, which provides free heart care in Egypt.",
+  experience: "1957",
+  projects: "2,500",
+  problem: "1992",
+  technologies: "2009"
 };
 
 async function seedAbout() {

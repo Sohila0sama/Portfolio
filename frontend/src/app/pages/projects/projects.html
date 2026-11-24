@@ -1,8 +1,8 @@
 <div class="projects-section">
   <div class="container">
 
-    <h2>Recent <span>Projects</span></h2>
-    <p>Showcasing real-world applications built with modern technologies.</p>
+    <h2>Career <span>Milestones</span></h2>
+    <p>Key achievements in surgery, research and humanitarian work.</p>
 
     <div class="projects-grid">
       <div class="project-card" *ngFor="let project of projects">
@@ -17,8 +17,8 @@
           <p>{{ project.description }}</p>
 
           <div class="project-links">
-            <a *ngIf="project.liveDemo" [href]="project.liveDemo" target="_blank">Live Demo</a>
-            <a *ngIf="project.sourceCode" [href]="project.sourceCode" target="_blank">Source Code</a>
+            <a *ngIf="project.liveDemo" [href]="project.liveDemo" target="_blank">Read More</a>
+            <a *ngIf="project.sourceCode" [href]="project.sourceCode" target="_blank">Source</a>
           </div>
         </div>
       </div>

@@ -10,7 +10,7 @@
 .badge {
   display: inline-block;
   padding: 6px 14px;
-  background: rgba(0,224,164,.15);
+  background: rgba(255, 92, 122,.15);
   border-radius: 20px;
   color: var(--primary);
   font-size: 14px;
@@ -47,8 +47,8 @@
     width: 270px;
     height: 250px;
     border-radius: 50%;
-    border: 6px solid rgba(0, 224, 164, .35);
-    box-shadow: 0 0 50px rgba(0, 224, 164, .15);
+    border: 6px solid rgba(255, 92, 122, .35);
+    box-shadow: 0 0 50px rgba(255, 92, 122, .15);
 }
 
 /* النسخة التانية من الهيرو */
@@ -102,7 +102,7 @@
 }
 
 .tech:hover {
-  border-color: rgba(0,224,164,.5);
+  border-color: rgba(255, 92, 122,.5);
   color: var(--primary);
 }
 

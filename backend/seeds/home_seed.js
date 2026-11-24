@@ -19,21 +19,26 @@ const HomeSchema = new mongoose.Schema({
 
 const Home = mongoose.model("home", HomeSchema);
 
+// NOTE: field names are kept so the existing app keeps working:
+//   linkedin -> "Biography" button (Wikipedia)
+//   cv       -> "Global Heart Foundation" button
+//   github   -> "BHF Recognition" button
 const homeData = {
-  name: "Sayed Mohamed",
-  title: "Full Stack Developer",
+  name: "Magdi Yacoub",
+  title: "Cardiothoracic Surgeon & Researcher",
   image: "uploads/profile.jpg",
-  description: "I'm a Full Stack Developer passionate about building web applications using Angular and Node.js.",
-  linkedin: "https://linkedin.com/in/sayed-mohamed-81b66b290/",
-  cv: "uploads/cv.pdf",
-  github: "https://github.com/sayedmohameddev",
+  description:
+    "Egyptian-British cardiothoracic surgeon, a pioneer of heart and heart-lung transplantation and founder of the Aswan Heart Centre.",
+  linkedin: "https://en.wikipedia.org/wiki/Magdi_Yacoub",
+  cv: "https://myglobalheart.org",
+  github:
+    "https://www.bhf.org.uk/what-we-do/news-from-the-bhf/news-archive/2026/april/prof-sir-magdi-yacoub-honoured-with-red-plaque",
   workingWith: [
-    "Angular",
-    "JavaScript",
-    "TypeScript",
-    "Node.js",
-    "Express.js",
-    "MongoDB"
+    "Heart Transplantation",
+    "Congenital Heart Surgery",
+    "Heart Valve Research",
+    "Tissue Engineering",
+    "Global Health"
   ]
 };
 

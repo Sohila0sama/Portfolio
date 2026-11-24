@@ -7,23 +7,23 @@
     </span>
 
     <h1>
-      Hi, I'm <span>{{ homeData.name }}</span>
+      Professor Sir <span>{{ homeData.name }}</span>
     </h1>
 
     <p class="subtitle">
       {{ homeData.description }}
     </p>
-    
+
     <div class="actions">
-      <a class="btn ghost" [href]= "homeData.linkedin" target="_blank">View My Work</a>
-      <a class="btn primary " [href]= "homeData.cv" target="_blank">Download CV</a>
-      <a class="btn ghost" [href]= "homeData.github" target="_blank">Contact Me</a>
+      <a class="btn ghost" [href]="homeData.linkedin" target="_blank">Biography</a>
+      <a class="btn primary" [href]="homeData.cv" target="_blank">Global Heart Foundation</a>
+      <a class="btn ghost" [href]="homeData.github" target="_blank">BHF Recognition</a>
     </div>
 
-    <!-- Working With -->
+    <!-- Focus areas -->
     <div class="working-with" *ngIf="homeData.workingWith?.length">
 
-      <span>Working With</span>
+      <span>Focus Areas</span>
 
       <div class="tech-list">
         <div class="tech" *ngFor="let tech of homeData.workingWith">

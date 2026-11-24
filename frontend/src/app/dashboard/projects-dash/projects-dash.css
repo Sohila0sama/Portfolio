@@ -8,7 +8,7 @@
 
 /* ===== Title ===== */
 .panel h3 {
-  color: #00e0a4;
+  color: #ff5c7a;
   margin-bottom: 25px;
   font-size: 22px;
 }
@@ -35,8 +35,8 @@
 
 .project-form input:focus,
 .project-form textarea:focus {
-  border-color: #00e0a4;
-  box-shadow: 0 0 10px rgba(0, 224, 164, 0.2);
+  border-color: #ff5c7a;
+  box-shadow: 0 0 10px rgba(255, 92, 122, 0.2);
 }
 
 /* ===== File Upload ===== */
@@ -70,7 +70,7 @@ button {
 /* Primary Button */
 .btn-primary {
   width: 15%;
-  background: #00e0a4;
+  background: #ff5c7a;
   color: #000;
   border: none;
   padding: 10px 16px;
@@ -85,15 +85,15 @@ button {
 /* Ghost Button (Add Project) */
 .btn.ghost {
   background: transparent;
-  border: 1px solid #00e0a4;
-  color: #00e0a4;
+  border: 1px solid #ff5c7a;
+  color: #ff5c7a;
   padding: 10px 20px;
   border-radius: 30px;
   margin-top: 10px;
 }
 
 .btn.ghost:hover {
-  background: #00e0a4;
+  background: #ff5c7a;
   color: #000;
 }
 
@@ -133,7 +133,7 @@ button {
 
 .project-card:hover {
   transform: translateY(-5px);
-  box-shadow: 0 10px 25px rgba(0, 224, 164, 0.15);
+  box-shadow: 0 10px 25px rgba(255, 92, 122, 0.15);
 }
 
 /* ===== Card Image ===== */
@@ -146,7 +146,7 @@ button {
 
 /* ===== Card Content ===== */
 .project-card h4 {
-  color: #00e0a4;
+  color: #ff5c7a;
   margin: 5px 0;
 }
 
