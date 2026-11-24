@@ -23,7 +23,7 @@ const About = mongoose.model("About", AboutSchema);
 //   problem      -> year he was knighted
 //   technologies -> year the Aswan Heart Centre was founded
 const aboutData = {
-  title: "About Sir Magdi",
+  title: "Surgeon, Researcher & Humanitarian",
   description:
     "Born in Bilbeis, Egypt in 1935, Magdi Yacoub graduated from Cairo University School of Medicine and went on to a career in the UK. He began the heart transplant programme at Harefield Hospital in 1980, served as British Heart Foundation Professor of Cardiothoracic Surgery at Imperial College London, and founded the charity Chain of Hope in 1996 and the Aswan Heart Centre in 2009, which provides free heart care in Egypt.",
   experience: "1957",
